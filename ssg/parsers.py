@@ -66,3 +66,4 @@ class ReStructuredTextParser(Parser):
         sys.stdout.write(
             "\x1b[1;32m{} converted to HTML. Metadata: {}\n".format(path.name, content)
         )
+        hooks.event("written")
